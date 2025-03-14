@@ -6,12 +6,12 @@ interface CurrencyRateState {
 }
 
 const getItemsFromLocalStorage = () => {
-    const data = localStorage.getItem('currencyItems');
-    return data ? JSON.parse(data) : [];
+    const data = typeof window !== "undefined" ? localStorage.getItem('currencyItems') : '[]'
+    return data ? JSON.parse(data) : []
 }
 
 const setItemsToLocalStorage = (data: any) => {
-    localStorage.setItem('currencyItems', JSON.stringify(data))
+    typeof window !== "undefined" && localStorage.setItem('currencyItems', JSON.stringify(data))
 }
 
 const initialState: CurrencyRateState = {

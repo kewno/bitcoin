@@ -1,0 +1,29 @@
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  tbody tr {
+    cursor: pointer;
+  }
+
+  td {
+    text-align: center;
+
+    &.positive {
+      color: green;
+    }
+    &.negative {
+      color: red;
+    }
+  }
+
+  td, th {
+    padding: 5px;
+    border: 1px solid #1976d2;
+  }
+}

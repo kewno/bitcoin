@@ -7,7 +7,7 @@ import {rootReducer} from "@/store/store"
 import CurrencyTable from "@/components/CurrencyTable"
 import ButtonShowModal from "@/components/ButtonShowModal"
 
-const Dbs = () => {
+const Currency = () => {
 
     return (
          <Provider store={rootReducer}>
@@ -19,4 +19,4 @@ const Dbs = () => {
     );
 };
 
-export default Dbs;
+export default Currency;
